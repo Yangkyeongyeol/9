@@ -1,0 +1,11 @@
+void checkSuccess() {
+  fill(0);
+  textSize(100);
+  text("press a", 300, 300);
+  fill(255, 174, 138);
+  rect(400, 400, 100, 100);
+  fill(0);
+  text("a", 425, 475);
+  if (mousePressed==true){ // 버튼 누르면 게임 시작
+    if ((400<mouseX && mouseX<500) && (mouseY>400 && mouseY<500)) state=1;}
+}
